@@ -1,0 +1,158 @@
+﻿<Window x:Class="TourPlannerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewmodels="clr-namespace:TourPlannerApp.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
+        mc:Ignorable="d"
+   Title="Tour Planner" Height="700" Width="700">
+    <Grid>
+        <TabControl Background="AliceBlue">
+            <TabItem Header="Home" FontSize="15">
+                <Grid ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="75"/>
+                        <ColumnDefinition Width="10.8"/>
+                        <ColumnDefinition Width="184.2"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0"
+                              MinHeight="300"
+                              Width="250"
+                              Margin="10,10,10,10" Grid.ColumnSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Row="0" Grid.Column="0" Width="175" Margin="0,2,0,2" HorizontalAlignment="Left"
+                                 Text="{Binding SearchName, Mode=TwoWay}"></TextBox>
+                        <Button Grid.Column="1" Grid.Row="0" Width="70" Margin="5,2,0,2" HorizontalAlignment="Right"
+                                Command="{Binding SearchCommand}">Search</Button>
+                        <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                                  ItemsSource="{Binding Tours}"
+                                  SelectedItem="{Binding CurrentTour}"
+                                  Height="300">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+
+                    <Grid  Grid.Row="0" Grid.Column="3" Margin="10,10,10,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding CurrentTour.Name}"></TextBlock>
+                        <ComboBox Grid.Row="0" Grid.Column="1" Margin="50,0,0,0" MaxWidth="150">
+                            <ComboBoxItem IsSelected="True">Tour options</ComboBoxItem>
+                            <ComboBoxItem >Edit</ComboBoxItem>
+                            <ComboBoxItem>Copy</ComboBoxItem>
+                            <ComboBoxItem>Delete</ComboBoxItem>
+                            <ComboBoxItem>Create report</ComboBoxItem>
+                            <ComboBoxItem>export Tour data</ComboBoxItem>
+                        </ComboBox>
+                        <TabControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                            <TabItem Header="Route">
+                                <Image Source="{Binding CurrentRouteImgPath, Mode=TwoWay}"/>
+                            </TabItem>
+                            <TabItem Header="Description">
+                                <TextBlock Text="{Binding CurrentTour.Description}"></TextBlock>
+                            </TabItem>
+                            <TabItem Header="Distance">
+                                <TextBlock Text="{Binding CurrentTour.Distance}"></TextBlock>
+                            </TabItem>
+                        </TabControl>
+                    </Grid>
+                    <TabControl Background="AliceBlue" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Margin="10,10,10,10">
+                        <TabItem Header="Logs">
+                            <DataGrid Grid.Row="1" Grid.ColumnSpan="2">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="date" Width="100"/>
+                                    <DataGridTextColumn Header="report" Width="100" />
+                                    <DataGridTextColumn Header="distance" Width="100" />
+                                    <DataGridTextColumn Header="total time" Width="100" />
+                                    <DataGridTextColumn Header="rating" Width="100" />
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </TabItem>
+                        <TabItem Header="Create log">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Margin="5" HorizontalAlignment="Right">date:</Label>
+                                <TextBox Grid.Row="0" Grid.Column="1" MinWidth="200" Margin="5"></TextBox>
+                                <Label Grid.Row="0" Grid.Column="2" Margin="5" HorizontalAlignment="Right">report:</Label>
+                                <TextBox Grid.Row="0" Grid.Column="3" MinWidth="200" Margin="5"></TextBox>
+                                <Label Grid.Row="1" Grid.Column="0" Margin="5" HorizontalAlignment="Right">distance:</Label>
+                                <TextBox Grid.Row="1" Grid.Column="1" MinWidth="200" Margin="5"></TextBox>
+                                <Label Grid.Row="1" Grid.Column="2" Margin="5" HorizontalAlignment="Right">total time:</Label>
+                                <TextBox Grid.Row="1" Grid.Column="3" MinWidth="200" Margin="5"></TextBox>
+                                <Label Grid.Row="2" Grid.Column="0" Margin="5" HorizontalAlignment="Right">rating:</Label>
+                                <TextBox Grid.Row="2" Grid.Column="1" MinWidth="200" Margin="5"></TextBox>
+                                <Button Grid.Row="3" Grid.Column="3" MaxWidth="100" Height="30"
+                                        Command="{Binding AddLogCommand}">Save</Button>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Create Tour" FontSize="15" Padding="10,5">
+                <Grid Margin="10,30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" Width="100" Margin="5">Name:</Label>
+                    <TextBox Grid.Row="0" Grid.Column="1" Width="300" HorizontalAlignment="Left" Margin="5" Text="{Binding TourName}" ></TextBox>
+                    <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" Width="100" Margin="5">From:</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" Width="300" HorizontalAlignment="Left" Margin="5" Text="{Binding TourFrom}"></TextBox>
+                    <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Width="100" Margin="5">To:</Label>
+                    <TextBox Grid.Row="2" Grid.Column="1" Width="300" HorizontalAlignment="Left" Margin="5" Text="{Binding TourTo}"></TextBox>
+                    <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" Width="100" Margin="5">description:</Label>
+                    <TextBox Grid.Row="3" Grid.Column="1" Width="300" HorizontalAlignment="Left" Margin="5" Text="{Binding TourDescription}"></TextBox>
+                    <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" Width="100" Margin="5">Distance:</Label>
+                    <TextBox Grid.Row="4" Grid.Column="1" Width="300" HorizontalAlignment="Left" Margin="5" Text="{Binding TourDistance}"></TextBox>
+                    <Button Grid.Row="5" Grid.Column="0" Margin="10" Padding="5"
+                            Command="{Binding AddTourCommand}">Save</Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
