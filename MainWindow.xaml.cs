@@ -26,5 +26,17 @@ namespace TourPlannerApp
             InitializeComponent();
             this.DataContext = new MainViewModel();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        //private void EditButton(object sender, RoutedEventArgs e)
+        //{
+        //    CreateTourWindow editWindow = new CreateTourWindow();
+        //    editWindow.Show();
+            
+        //}
     }
 }

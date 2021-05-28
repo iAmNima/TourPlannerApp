@@ -39,3 +39,11 @@ C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlann
 C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\QuestPDF.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\SkiaSharp.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\obj\Debug\netcoreapp3.1\CreateTourWindow.g.cs
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp\obj\Debug\netcoreapp3.1\CreateTourWindow.baml

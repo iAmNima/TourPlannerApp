@@ -132,6 +132,10 @@
               "target": "Package",
               "version": "[5.0.4, )"
             },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2021.5.1, )"
+            },
             "log4net": {
               "target": "Package",
               "version": "[2.0.12, )"
