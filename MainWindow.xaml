@@ -57,13 +57,22 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding CurrentTour.Name}"></TextBlock>
-                        <Button Grid.Row="0" Grid.Column="1" Width="100" Height="25" Margin="0"
-                                Command="{Binding EditTourCommand}" HorizontalAlignment="Right">
+                        <Button Grid.Row="0" Grid.Column="3" Width="110" Height="25" Margin="2"
+                                Command="{Binding EditTourCommand}" >
                             Create Tour
                         </Button>
-                        <TabControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                        <Button Grid.Row="0" Grid.Column="2" Width="110" Height="25" Margin="2"
+                                Command="{Binding DeleteTourCommand}" >Delete Tour
+                        </Button>
+                        <Button Grid.Row="0" Grid.Column="1" Width="110" Height="25" Margin="2"
+                                                Command="{Binding GenerateReportCommand}">Create Report
+                        </Button>
+                        <TabControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5">
                             <TabItem Header="Route">
                                 <Image Source="{Binding CurrentRouteImgPath, Mode=TwoWay}"/>
                             </TabItem>
@@ -73,23 +82,7 @@
                             <TabItem Header="Distance">
                                 <TextBlock Text="{Binding CurrentTour.Distance}"></TextBlock>
                             </TabItem>
-                            <TabItem Header="Menu">
-                                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                        </Grid.RowDefinitions>
-                                        <Button Grid.Row="0" Width="100" Height="40" Margin="10"
-                                                Command="{Binding DeleteTourCommand}">Delete Tour
-                                        </Button>
-                                        <Button Grid.Row="1" Width="100" Height="40" Margin="10"
-                                                Command="{Binding GenerateReportCommand}">Create Report
-                                        </Button>
-                                    </Grid>
-                                </StackPanel>
-                            </TabItem>
+                         
                         </TabControl>
                     </Grid>
                     <Button Grid.Row="1" Margin="10,10,184,10" Grid.ColumnSpan="3"

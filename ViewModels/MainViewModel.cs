@@ -36,7 +36,6 @@ namespace TourPlannerApp.ViewModels
         private double logRating;
 
         private ICommand searchCommand;
-        private ICommand addTourCommand;
         private ICommand addLogCommand;
         private ICommand generateReportCommand;
         private ICommand deleteTourCommand;
@@ -47,14 +46,13 @@ namespace TourPlannerApp.ViewModels
 
 
         public ICommand SearchCommand => searchCommand ??= new RelayCommand(Search);
-        public ICommand AddTourCommand => addTourCommand ??= new RelayCommand(AddNewTour);
         public ICommand AddLogCommand => addLogCommand ??= new RelayCommand(AddNewLog);
         public ICommand GenerateReportCommand => generateReportCommand ??= new RelayCommand(GenerateReport);
         public ICommand DeleteTourCommand => deleteTourCommand ??= new RelayCommand(DeleteTour);
         public ICommand DeleteLogCommand => deleteLogCommand ??= new RelayCommand(DeleteLog);
         public ICommand UpdateTourCommand => updateTourCommand ??= new RelayCommand(UpdateTour);
         public ICommand UpdateLogCommand => updateLogCommand ??= new RelayCommand(UpdateLog);
-        public ICommand EditTourCommand => editTourCommand ??= new RelayCommand(EditTour);
+        public ICommand EditTourCommand => editTourCommand ??= new RelayCommand(CreateTour);
         public ObservableCollection<TourEntry> Tours { get; set; }
         public ObservableCollection<LogEntry> Logs { get; set; }
 
@@ -72,6 +70,13 @@ namespace TourPlannerApp.ViewModels
             InitListView();
             log4net.Config.XmlConfigurator.Configure();
         }
+        public MainViewModel(ILogEntryDAO logEntryDAO, ITourEntryDAO tourEntryDAO)
+        {
+            this.tourPlannerAppFactory = TourPlannerAppFactory.GetInstance(logEntryDAO);
+            FillLogs();
+            log4net.Config.XmlConfigurator.Configure();
+        }
+
 
         public void InitListView()
         {
@@ -304,15 +309,6 @@ namespace TourPlannerApp.ViewModels
 
 
         //Tour methods:
-        private void AddNewTour(object commandParameter)
-        {
-            Log.Info("AddNewTour method of our MainVM is called.");
-            TourEntry createdTour = this.tourPlannerAppFactory.CreateTour(TourName, TourDescription, TourDistance);
-            //using from & to parameters to found the route image for this tour:
-            this.tourPlannerAppFactory.SaveRouteImageFromApi(TourFrom, TourTo, TourName); //TODO: tourName needs to be added
-            FillListView();
-            MessageBox.Show("New Tour got added! go back to Home!");
-        }
         private void DeleteTour(object commandParameter)
         {
             tourPlannerAppFactory.DeleteTour(CurrentTour);
@@ -354,7 +350,7 @@ namespace TourPlannerApp.ViewModels
             MessageBox.Show("New Report created!");
         }
 
-        private void EditTour(object commandParameter)
+        private void CreateTour(object commandParameter)
         {
             CreateTourWindow editWindow = new CreateTourWindow();
             editWindow.ShowDialog();

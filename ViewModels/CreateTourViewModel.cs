@@ -10,7 +10,6 @@ namespace TourPlannerApp.ViewModels
 {
     public class CreateTourViewModel : ViewModelBase
     {
-        private MainViewModel mainVM = new MainViewModel();
 
         private ITourPlannerAppFactory tourPlannerAppFactory;
         private ICommand addTourCommand;
