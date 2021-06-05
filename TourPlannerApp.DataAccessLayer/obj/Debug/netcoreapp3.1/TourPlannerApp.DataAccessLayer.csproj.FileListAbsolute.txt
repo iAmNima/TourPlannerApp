@@ -1,0 +1,12 @@
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.deps.json
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.pdb
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\bin\Debug\netcoreapp3.1\TourPlannerApp.Models.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\bin\Debug\netcoreapp3.1\TourPlannerApp.Models.pdb
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.AssemblyInfo.cs
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.csproj.CopyComplete
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.pdb

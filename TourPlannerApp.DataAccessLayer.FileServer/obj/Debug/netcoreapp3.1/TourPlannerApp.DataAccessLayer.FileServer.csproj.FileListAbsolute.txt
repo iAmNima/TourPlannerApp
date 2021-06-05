@@ -1,0 +1,14 @@
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.deps.json
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.pdb
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\bin\Debug\netcoreapp3.1\TourPlannerApp.Models.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\bin\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.pdb
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\bin\Debug\netcoreapp3.1\TourPlannerApp.Models.pdb
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.csprojAssemblyReference.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.AssemblyInfoInputs.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.AssemblyInfo.cs
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.csproj.CoreCompileInputs.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.csproj.CopyComplete
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\TourPlannerApp.DataAccessLayer.FileServer\obj\Debug\netcoreapp3.1\TourPlannerApp.DataAccessLayer.FileServer.pdb

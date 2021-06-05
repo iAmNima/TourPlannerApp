@@ -1,0 +1,9 @@
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\bin\Debug\netcoreapp3.1\TourPlannerApp.Models.deps.json
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\bin\Debug\netcoreapp3.1\TourPlannerApp.Models.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\bin\Debug\netcoreapp3.1\TourPlannerApp.Models.pdb
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\obj\Debug\netcoreapp3.1\TourPlannerApp.Models.csprojAssemblyReference.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\obj\Debug\netcoreapp3.1\TourPlannerApp.Models.AssemblyInfoInputs.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\obj\Debug\netcoreapp3.1\TourPlannerApp.Models.AssemblyInfo.cs
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\obj\Debug\netcoreapp3.1\TourPlannerApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\obj\Debug\netcoreapp3.1\TourPlannerApp.Models.dll
+C:\Users\nimab\OneDrive\Desktop\semester 4\WPF projects\TourPlannerApp\Models\obj\Debug\netcoreapp3.1\TourPlannerApp.Models.pdb
